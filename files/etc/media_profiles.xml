@@ -78,42 +78,42 @@
 <MediaSettings>
     <!-- Each camcorder profile defines a set of predefined configuration parameters -->
     <CamcorderProfiles cameraId="0">
-        <EncoderProfile quality="hd" fileFormat="3gp" duration="60">
+        <EncoderProfile quality="hd" fileFormat="mp4" duration="60">
             <Video codec="h264"
-                   bitRate="6000000"
+                   bitRate="4000000"
                    width="1280"
                    height="720"
                    frameRate="30" />
 
-            <Audio codec="amrnb"
-                   bitRate="12200"
-                   sampleRate="8000"
+            <Audio codec="aac"
+                   bitRate="64000"
+                   sampleRate="44100"
                    channels="1" />
         </EncoderProfile>
 
-        <EncoderProfile quality="high" fileFormat="3gp" duration="60">
+        <EncoderProfile quality="high" fileFormat="mp4" duration="60">
             <Video codec="h264"
-                   bitRate="6000000"
+                   bitRate="2000000"
                    width="720"
                    height="480"
                    frameRate="30" />
 
-            <Audio codec="amrnb"
-                   bitRate="12200"
-                   sampleRate="8000"
+            <Audio codec="aac"
+                   bitRate="64000"
+                   sampleRate="44100"
                    channels="1" />
         </EncoderProfile>
 
-        <EncoderProfile quality="low" fileFormat="3gp" duration="30">
-            <Video codec="m4v"
-                   bitRate="256000"
-                   width="176"
-                   height="144"
-                   frameRate="15" />
+        <EncoderProfile quality="low" fileFormat="mp4" duration="30">
+            <Video codec="h264"
+                   bitRate="512000"
+                   width="320"
+                   height="240"
+                   frameRate="30" />
 
-            <Audio codec="amrnb"
-                   bitRate="12200"
-                   sampleRate="8000"
+            <Audio codec="aac"
+                   bitRate="64000"
+                   sampleRate="44100"
                    channels="1" />
         </EncoderProfile>
 
@@ -124,29 +124,29 @@
     </CamcorderProfiles>
 
     <CamcorderProfiles cameraId="1">
-	<EncoderProfile quality="high" fileFormat="3gp" duration="60">
-		<Video codec="m4v"
-			bitRate="2000000"
+	<EncoderProfile quality="high" fileFormat="mp4" duration="60">
+		<Video codec="h264"
+			bitRate="1000000"
 			width="640"
 			height="480"
-			frameRate="24" />
+			frameRate="30" />
 
-		<Audio codec="amrnb"
-			bitRate="12200"
-			sampleRate="8000"
+		<Audio codec="aac"
+			bitRate="64000"
+			sampleRate="44100"
 			channels="1" />
 	</EncoderProfile>
 
-        <EncoderProfile quality="low" fileFormat="3gp" duration="30">
-            <Video codec="m4v"
+        <EncoderProfile quality="low" fileFormat="mp4" duration="30">
+            <Video codec="h264"
                    bitRate="256000"
-                   width="176"
-                   height="144"
-                   frameRate="15" />
+                   width="320"
+                   height="240"
+                   frameRate="30" />
 
-            <Audio codec="amrnb"
-                   bitRate="12200"
-                   sampleRate="8000"
+            <Audio codec="aac"
+                   bitRate="64000"
+                   sampleRate="44100"
                    channels="1" />
 	</EncoderProfile>
 
@@ -184,6 +184,11 @@
         minFrameWidth="176" maxFrameWidth="1280"
         minFrameHeight="144" maxFrameHeight="720"
         minFrameRate="1" maxFrameRate="30" />
+
+    <AudioEncoderCap name="aac" enabled="true"
+        minBitRate="8192" maxBitRate="64000"
+        minSampleRate="16000" maxSampleRate="44100"
+        minChannels="1" maxChannels="1" />
 
     <AudioEncoderCap name="amrwb" enabled="true"
         minBitRate="6600" maxBitRate="23050"
