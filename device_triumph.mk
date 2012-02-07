@@ -147,7 +147,8 @@ PRODUCT_COPY_FILES += \
 
 # GPS
 PRODUCT_COPY_FILES += \
-    device/motorola/triumph/files/etc/loc_parameter.ini:system/etc/loc_parameter.ini
+    device/motorola/triumph/files/etc/loc_parameter.ini:system/etc/loc_parameter.ini \
+    device/motorola/triumph/files/etc/gps.conf:/system/etc/gps.conf
 
 # APN
 PRODUCT_COPY_FILES += \
