@@ -95,18 +95,10 @@ PRODUCT_COPY_FILES += \
 
 # Keylayouts
 PRODUCT_COPY_FILES += \
-    device/motorola/triumph/keylayout/fih_headsethook.kl:system/usr/keylayout/fih_headsethook.kl \
     device/motorola/triumph/keylayout/fih_ringswitch.kl:system/usr/keylayout/fih_ringswitch.kl \
-    device/motorola/triumph/keylayout/fluid-keypad.kl:system/usr/keylayout/fluid-keypad.kl \
     device/motorola/triumph/keylayout/fbx_kybd.kl:system/usr/keylayout/fbx_kybd.kl \
-    device/motorola/triumph/keylayout/Generic.kl:system/usr/keylayout/Generic.kl \
-    device/motorola/triumph/keylayout/qwerty.kl:system/usr/keylayout/qwerty.kl \
-    device/motorola/triumph/keylayout/sf6_kybd.kl:system/usr/keylayout/sf6_kybd.kl \
-    device/motorola/triumph/keylayout/sf8_kybd.kl:system/usr/keylayout/sf8_kybd.kl \
-    device/motorola/triumph/keylayout/msm_tma300_ts.kl:system/usr/keylayout/msm_tma300_ts.kl \
     device/motorola/triumph/keylayout/AVRCP.kl:system/usr/keylayout/AVRCP.kl \
     device/motorola/triumph/keylayout/7k_handset.kl:system/usr/keylayout/7k_handset.kl \
-    device/motorola/triumph/keylayout/surf_keypad.kl:system/usr/keylayout/surf_keypad.kl \
     device/motorola/triumph/keylayout/Vendor_2378_Product_100a.kl:system/usr/keylayout/Vendor_2378_Product_100a.kl
 
 # Video firmware
