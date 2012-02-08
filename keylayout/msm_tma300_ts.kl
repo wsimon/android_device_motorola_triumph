@@ -1,4 +1,4 @@
-# Copyright (c) 2009, Code Aurora Forum.
+# Copyright (c) 2010, Code Aurora Forum.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,14 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-
-# Function keys
-key 212   CAMERA
-key 183   FOCUS
-
-# Volume keys
-key 115   VOLUME_UP         WAKE_DROPPED
-key 114   VOLUME_DOWN       WAKE_DROPPED
-
-# Home key
-key 102   HOME              WAKE_DROPPED
+key 158   BACK              WAKE_DROPPED
+key 102   HOME              WAKE
+key 139   MENU              WAKE
+key 217   SEARCH            WAKE_DROPPED
