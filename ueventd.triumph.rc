@@ -73,7 +73,7 @@
 /dev/oncrpc/3000fffd:00000000	0660	radio	system
 
 #camera
-/dev/msm_camera/*       0660    system      system
+/dev/msm_camera/*       0660    system      camera
 
 #sensors
 /dev/yas529		0777    root	    system
