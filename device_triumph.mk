@@ -181,7 +181,6 @@ PRODUCT_COPY_FILES += \
     device/motorola/triumph/files/etc/media_profiles.xml:system/etc/media_profiles.xml
 
 # Modules
-# commenting these until I rebuild the kernel and make up to date versions of these modules
 PRODUCT_COPY_FILES += \
     device/motorola/triumph/modules/cifs.ko:/system/lib/modules/cifs.ko
 
@@ -213,6 +212,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Set region
 PRODUCT_DEFAULT_LANGUAGE := en_US
 PRODUCT_DEFAULT_REGION := US
+
+# High-density art, but English locale
+PRODUCT_LOCALES += hdpi
+PRODUCT_AAPT_CONFIG := normal hdpi
+PRODUCT_AAPT_PREF_CONFIG := hdpi
 
 # we have enough storage space to hold precise GC data
 PRODUCT_TAGS += dalvik.gc.type-precise
