@@ -136,8 +136,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/motorola/triumph/prebuilt/lib/libaudioalsa.so:/system/lib/libaudioalsa.so \
     device/motorola/triumph/prebuilt/lib/libaudioalsa.so:/obj/lib/libaudioalsa.so \
-    device/motorola/triumph/prebuilt/lib/liba2dp.so:/system/lib/liba2dp.so \
-    device/motorola/triumph/prebuilt/lib/liba2dp.so:/obj/lib/liba2dp.so \
+    device/motorola/triumph/prebuilt/lib/liba2dp.so:/system/lib/liba2dp.so 
 
 # GPS
 PRODUCT_COPY_FILES += \
