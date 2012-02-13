@@ -269,7 +269,7 @@ service fm_dl /system/bin/sh /system/etc/init.qcom.fm.sh
     oneshot
 
 service qcom-sh /system/bin/sh /init.qcom.sh
-	class main
+    class main
     user root
     oneshot
 
@@ -281,7 +281,7 @@ on property:ro.hdmi.enable=true
     start hdmid
 
 service geomagneticd /system/bin/geomagneticd
-	class main
+    class main
     user compass
     group system input
 
@@ -291,44 +291,49 @@ service orientationd /system/bin/orientationd
     group system input
 
 service proximityd /system/bin/proximityd
-	class main
+    class main
     user compass
     group system input
 
 service lightd /system/bin/lightd
-	class main
+    class main
     user compass
     group system input
 
 service wpa_supplicant /system/bin/logwrapper /system/bin/wpa_supplicant -Dwext -iwlan0 -c/data/misc/wifi/wpa_supplicant.conf -dd
-    user root
-    group system wifi inet
+    class main
     socket wpa_wlan0 dgram 660 wifi wifi
     disabled
     oneshot
 
 service qcom_sdio_init /system/etc/init.qcom.sdio.sh 1
+    class main
     oneshot
     disabled
 
 service qcom_sdio_deinit /system/etc/init.qcom.sdio.sh 0
+    class main
     oneshot
     disabled
 
 service dhcpcd_wlan0 /system/bin/dhcpcd -BKL
+    class main
     disabled
     oneshot
 
 service iprenew_wlan0 /system/bin/dhcpcd -n
+    class main
     disabled
     oneshot
 
 service qcom-wifi /system/bin/sh /system/etc/init.qcom.wifi.sh
+    class main
     user root
     disabled
     oneshot
 
 service hostapd /system/bin/hostapd -dddd /data/hostapd/hostapd.conf
+    class main
     user root
     group root
     oneshot
