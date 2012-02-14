@@ -37,6 +37,7 @@ PRODUCT_PACKAGES += \
     audio.a2dp.default \
     libaudioutils \
     libtinyalsa \
+    libstagefrighthw \
     libOmxCore \
     libOmxVenc \
     libOmxVdec
