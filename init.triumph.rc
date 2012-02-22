@@ -278,6 +278,7 @@ service hdmid /system/bin/hdmid
     disabled
 
 on property:ro.hdmi.enable=true
+    class main
     start hdmid
 
 service geomagneticd /system/bin/geomagneticd
@@ -307,12 +308,10 @@ service wpa_supplicant /system/bin/logwrapper /system/bin/wpa_supplicant -Dwext 
     oneshot
 
 service qcom_sdio_init /system/etc/init.qcom.sdio.sh 1
-    class main
     oneshot
     disabled
 
 service qcom_sdio_deinit /system/etc/init.qcom.sdio.sh 0
-    class main
     oneshot
     disabled
 
