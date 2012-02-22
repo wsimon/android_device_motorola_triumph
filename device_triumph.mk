@@ -199,7 +199,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Perfomance tweaks and misc
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.execution-mode=int:jit \
-    dalvik.vm.heapsize=32m \
+    dalvik.vm.heapsize=48m \
     ro.sf.lcd_density=240 \
     ro.compcache.default=0
 
@@ -218,7 +218,7 @@ PRODUCT_DEFAULT_REGION := US
 
 # High-density art, but English locale
 PRODUCT_LOCALES += hdpi
-PRODUCT_AAPT_CONFIG := normal hdpi
+PRODUCT_AAPT_CONFIG := hdpi
 PRODUCT_AAPT_PREF_CONFIG := hdpi
 
 # we have enough storage space to hold precise GC data
@@ -237,4 +237,4 @@ PRODUCT_VERSION_MAJOR := 9
 PRODUCT_VERSION_MINOR := 0.0
 
 PRODUCT_PROPERTY_OVERRIDES += \
-            ro.cm.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).Triumph-Alpha-0.6.7
+            ro.cm.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).Triumph-Alpha-0.6.8
