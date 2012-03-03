@@ -153,6 +153,8 @@ PRODUCT_COPY_FILES += \
 
 # EGL/GPU
 PRODUCT_COPY_FILES += \
+    device/motorola/triumph/prebuilt/lib/egl/egl.cfg:/system/lib/egl/egl.cfg \
+    device/motorola/triumph/prebuilt/lib/egl/libGLES_android.so:/system/lib/egl/libGLES_android.so \
     device/motorola/triumph/prebuilt/lib/egl/libEGL_adreno200.so:/system/lib/egl/libEGL_adreno200.so \
     device/motorola/triumph/prebuilt/lib/egl/eglsubAndroid.so:/system/lib/egl/eglsubAndroid.so \
     device/motorola/triumph/prebuilt/lib/egl/libGLESv1_CM_adreno200.so:/system/lib/egl/libGLESv1_CM_adreno200.so \
