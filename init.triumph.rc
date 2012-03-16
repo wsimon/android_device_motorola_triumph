@@ -220,6 +220,7 @@ service gpsone_daemon /system/bin/gpsone_daemon
 #    oneshot
 
 service rmt_storage /system/bin/rmt_storage /dev/block/mmcblk0p14 /dev/block/mmcblk0p15
+    class main
     user root
     disabled
 
