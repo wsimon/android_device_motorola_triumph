@@ -13,6 +13,9 @@ else
 	LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
 
+# Build hdmid
+include frameworks/base/cmds/hdmid/Android.mk
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel
 
