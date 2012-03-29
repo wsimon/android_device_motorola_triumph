@@ -83,9 +83,7 @@
 /dev/gps_sync		0777	root        root
 
 #video
-/dev/msm_vidc_reg         0660  system       audio
-/dev/msm_vidc_dec         0660  system       audio
-/dev/msm_vidc_enc         0660  system       audio
+/dev/msm_vidc*          0660    system      graphics
 
 #audio
 /dev/msm_amrnb            0660  system       audio
