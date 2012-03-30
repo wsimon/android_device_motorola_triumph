@@ -41,11 +41,20 @@ PRODUCT_PACKAGES += \
     audio.primary.msm7x30 \
     audio.a2dp.default \
     libaudioutils \
-    libtinyalsa \
+    libtinyalsa
+
+# QCOM OMX
+PRODUCT_PACKAGES += \
     libstagefrighthw \
+    libmm-omxcore \
+    libdivxdrmdecrypt \
     libOmxCore \
     libOmxVenc \
-    libOmxVdec
+    libOmxVdec \
+    mm-vdec-omx-test \
+    mm-video-driver-test \
+    mm-venc-omx-test720p \
+    mm-video-encdrv-test
 
 # Camera
 PRODUCT_PACKAGES += \
