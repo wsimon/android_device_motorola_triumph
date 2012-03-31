@@ -182,8 +182,6 @@ on boot
     chown system input /sys/class/input/input11/delay
     chown system input /sys/class/input/input11/wake
 
-
-
 on property:init.svc.wpa_supplicant=stopped
     stop dhcpcd
 
@@ -193,6 +191,11 @@ on property:init.svc.bluetoothd=running
 
 #on property:init.svc.bluetoothd=stopped
 #    stop btwlancoex
+
+service sysinit /system/bin/logwrapper /system/bin/busybox run-parts /system/etc/init.d
+    class main
+    disabled
+    oneshot
 
 service hciattach /system/bin/sh /system/etc/init.qcom.bt.sh
     class main
